@@ -12,4 +12,8 @@ lingon.postProcessors.set('jade', function() {
   return [$.jade()];
 });
 
+lingon.postProcessors.set('js', function() {
+  return $.babel();
+});
+
 livereload(lingon);

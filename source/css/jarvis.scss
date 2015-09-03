@@ -1,34 +1,50 @@
+$jarvis-size: 30px;
 
-// const passive = '○';
-// const listen = '⦾';
-// const talk = '⦿';
-//
 .jarvis {
-  box-sizing: border-box;
+  box-sizing: content-box;
   position: fixed;
-  bottom: 0;
-  right: 0;
-  padding: 0.4em .5em;
-  width: 1.75em;
-  height: 1.65em;
-  font-size: 2em;
-  background-color: black;
-  color: white;
-  line-height: .65;
+  bottom: $jarvis-size*.2;
+  right: $jarvis-size*.2;
+  border-radius: 50%;
+  background-color: #222;
+  border: $jarvis-size*.8 solid black;
+  width: $jarvis-size*.2;
+  height: $jarvis-size*.2;
+  transition: background-color .8s ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: .6s;
+  animation-timing-function: ease;
 
   &--passive {
-    &:before {
-      content: '⊙';
-    }
+    background-color: #999;
+    opacity: .5;
   }
   &--listen {
-    &:before {
-      content: '⊖';
-    }
+    background-color: #0f0;
+    animation-name: jarvis-listen;
   }
   &--talk {
-    &:before {
-      content: '⊕';
-    }
+    background-color: #f00;
+    animation-name: jarvis-talk;
+  }
+}
+
+@keyframes jarvis-listen {
+  0% {
+    background-color: #0f0;
+  }
+  100% {
+    background-color: #2d2;
+  }
+}
+
+
+@keyframes jarvis-talk {
+  0% {
+    background-color: #f00;
+  }
+  100% {
+    background-color: #d22;
   }
 }

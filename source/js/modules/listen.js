@@ -21,23 +21,29 @@
   }
 
   jarvis.listen = function() {
-    recognition = new webkitSpeechRecognition();
-    recognition.continuous = true;
-    // recognition.interimResults = true;
-    recognition.onresult = (e) => {
-      var bestResult = getBestResult(e.results[e.resultIndex]);
-      // console.log('recognition result', e, bestResult);
-      jarvis.parse(bestResult.transcript);
-    };
-    recognition.onspeechstart = function() {
-      console.log('onspeechstart', arguments);
-      jarvis.trigger('listen', {});
-    };
-    recognition.onspeechend = function() {
-      console.log('onspeechend', arguments);
-      jarvis.trigger('passive', {});
-    };
-    recognition.start();
+    if(!recognition) {
+      recognition = new webkitSpeechRecognition();
+      recognition.continuous = true;
+      // recognition.interimResults = true;
+      recognition.onresult = function(e) {
+        var bestResult = getBestResult(e.results[e.resultIndex]);
+        console.log('recognition result', e, bestResult);
+        jarvis.parse(bestResult.transcript);
+      };
+      recognition.onspeechstart = function() {
+        console.log('onspeechstart');
+        jarvis.trigger('listen', {});
+      };
+      recognition.onspeechend = recognition.onsoundend = function() {
+        console.log('onspeechend');
+        jarvis.trigger('passive', {});
+      };
+    }
+    try {
+      recognition.start();
+    } catch (ex) {
+      console.warn('Jarvis is already listening.')
+    }
   };
 
   jarvis.listenStop = function() {

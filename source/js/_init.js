@@ -19,7 +19,6 @@
       jarvis.listen();
     },
     trigger: (handler, e) => {
-      console.log('trying to trigger',handler);
       var array = jarvis['on' + handler];
       if (array) {
         console.log('trigger', handler, array);
@@ -32,4 +31,4 @@
 
   // export jarvis
   window.jarvis = jarvis;
-})(this);
+})(window);

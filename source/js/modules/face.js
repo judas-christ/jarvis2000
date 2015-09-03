@@ -6,6 +6,11 @@
     if(!jarvisFace) {
       jarvisFace = document.body.appendChild(document.createElement('div'));
       jarvisFace.className = 'jarvis jarvis--passive';
+      jarvisFace.onclick = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        jarvis.listen();
+      }
     }
   });
 

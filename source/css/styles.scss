@@ -1,1 +1,39 @@
 @import 'base/resetish';
+
+input, button {
+  border: 1px solid #ccc;
+  background: white;
+  padding: .5em;
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.main-header {
+  background-color: yellow;
+  &__link {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.main-content {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.search-results {
+  li {
+    padding: 20px;
+    + li {
+      border-top: 1px solid #eee;
+    }
+  }
+}

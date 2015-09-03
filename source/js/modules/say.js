@@ -12,7 +12,7 @@
     var utterance = new SpeechSynthesisUtterance();
     utterance.voice = jarvisVoice;
     utterance.voiceURI = jarvisVoice.voiceURI;
-    utterance.volume = 0.8; // 0 to 1
+    utterance.volume = 1; // 0 to 1
     utterance.rate = 1; // 0.1 to 10
     utterance.pitch = 1; //0 to 2
     utterance.text = text;

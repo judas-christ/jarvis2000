@@ -1,267 +1,258 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(content='width=device-width', name='viewport')
-    meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
-    title Jarvis 2000
-    link(href='/css/styles.css', rel='stylesheet')
-    link(href='/css/jarvis.css', rel='stylesheet')
-  body
-    h1 Jarvis test page
-    form(action='', method='get')
-      input(type='search', name='q')
-      button(type='submit') Search
-    ol.search-results(style='display:none')
-      li: a(href="movie.html?m=Elite Squad: The Enemy Within") Elite Squad: The Enemy Within
-      li: a(href="movie.html?m=What Ever Happened to Baby Jane?") What Ever Happened to Baby Jane?
-      li: a(href="movie.html?m=In the Mood for Love") In the Mood for Love
-      li: a(href="movie.html?m=The Big Sleep") The Big Sleep
-      li: a(href="movie.html?m=The Graduate") The Graduate
-      li: a(href="movie.html?m=The Hustler") The Hustler
-      li: a(href="movie.html?m=La Dolce Vita") La Dolce Vita
-      li: a(href="movie.html?m=Lagaan") Lagaan
-      li: a(href="movie.html?m=Anatomy of a Murder") Anatomy of a Murder
-      li: a(href="movie.html?m=Before Sunset") Before Sunset
-      li: a(href="movie.html?m=X-Men: Days of Future Past") X-Men: Days of Future Past
-      li: a(href="movie.html?m=Underground") Underground
-      li: a(href="movie.html?m=Papillon") Papillon
-      li: a(href="movie.html?m=Beauty and the Beast") Beauty and the Beast
-      li: a(href="movie.html?m=La Strada") La Strada
-      li: a(href="movie.html?m=Spring, Summer, Fall, Winter... and Spring") Spring, Summer, Fall, Winter... and Spring
-      li: a(href="movie.html?m=The Night of the Hunter") The Night of the Hunter
-      li: a(href="movie.html?m=Prisoners") Prisoners
-      li: a(href="movie.html?m=Roman Holiday") Roman Holiday
-      li: a(href="movie.html?m=The Help") The Help
-      li: a(href="movie.html?m=Who's Afraid of Virginia Woolf?") Who's Afraid of Virginia Woolf?
-      li: a(href="movie.html?m=Castle in the Sky") Castle in the Sky
-      li: a(href="movie.html?m=Pirates of the Caribbean: The Curse of the Black Pearl") Pirates of the Caribbean: The Curse of the Black Pearl
-      li: a(href="movie.html?m=Notorious") Notorious
-      li: a(href="movie.html?m=A Fistful of Dollars") A Fistful of Dollars
-      li: a(href="movie.html?m=La Haine") La Haine
-      li: a(href="movie.html?m=High Noon") High Noon
-      li: a(href="movie.html?m=The Imitation Game") The Imitation Game
-      li: a(href="movie.html?m=The King's Speech") The King's Speech
-      li: a(href="movie.html?m=Ip Man") Ip Man
-      li: a(href="movie.html?m=Dog Day Afternoon") Dog Day Afternoon
-      li: a(href="movie.html?m=Barry Lyndon") Barry Lyndon
-      li: a(href="movie.html?m=Rocky") Rocky
-      li: a(href="movie.html?m=The Truman Show") The Truman Show
-      li: a(href="movie.html?m=Fanny and Alexander") Fanny and Alexander
-      li: a(href="movie.html?m=Harry Potter and the Deathly Hallows: Part 2") Harry Potter and the Deathly Hallows: Part 2
-      li: a(href="movie.html?m=Throne of Blood") Throne of Blood
-      li: a(href="movie.html?m=Monsters, Inc.") Monsters, Inc.
-      li: a(href="movie.html?m=Memories of Murder") Memories of Murder
-      li: a(href="movie.html?m=Groundhog Day") Groundhog Day
-      li: a(href="movie.html?m=Guardians of the Galaxy") Guardians of the Galaxy
-      li: a(href="movie.html?m=Jaws") Jaws
-      li: a(href="movie.html?m=The Battle of Algiers") The Battle of Algiers
-      li: a(href="movie.html?m=The Terminator") The Terminator
-      li: a(href="movie.html?m=Infernal Affairs") Infernal Affairs
-      li: a(href="movie.html?m=Twelve Monkeys") Twelve Monkeys
-      li: a(href="movie.html?m=Before Sunrise") Before Sunrise
-      li: a(href="movie.html?m=Jurassic Park") Jurassic Park
-      li: a(href="movie.html?m=The Avengers") The Avengers
-      li: a(href="movie.html?m=Wild Tales") Wild Tales
-      li: a(href="movie.html?m=Strangers on a Train") Strangers on a Train
-      li: a(href="movie.html?m=8½") 8½
-      li: a(href="movie.html?m=Donnie Darko") Donnie Darko
-      li: a(href="movie.html?m=The Bourne Ultimatum") The Bourne Ultimatum
-      li: a(href="movie.html?m=Gandhi") Gandhi
-      li: a(href="movie.html?m=Stalker") Stalker
-      li: a(href="movie.html?m=The Best Years of Our Lives") The Best Years of Our Lives
-      li: a(href="movie.html?m=The Wizard of Oz") The Wizard of Oz
-      li: a(href="movie.html?m=Sin City") Sin City
-      li: a(href="movie.html?m=Shutter Island") Shutter Island
-      li: a(href="movie.html?m=Diabolique") Diabolique
-      li: a(href="movie.html?m=Nausicaä of the Valley of the Wind") Nausicaä of the Valley of the Wind
-      li: a(href="movie.html?m=Hachi: A Dog's Tale") Hachi: A Dog's Tale
-      li: a(href="movie.html?m=The Grapes of Wrath") The Grapes of Wrath
-      li: a(href="movie.html?m=Ben-Hur") Ben-Hur
-      li: a(href="movie.html?m=Million Dollar Baby") Million Dollar Baby
-      li: a(href="movie.html?m=I faderns namn") I faderns namn
-      li: a(href="movie.html?m=Amores Perros") Amores Perros
-      li: a(href="movie.html?m=The Grand Budapest Hotel") The Grand Budapest Hotel
-      li: a(href="movie.html?m=Persona") Persona
-      li: a(href="movie.html?m=Annie Hall") Annie Hall
-      li: a(href="movie.html?m=The Princess Bride") The Princess Bride
-      li: a(href="movie.html?m=12 Years a Slave") 12 Years a Slave
-      li: a(href="movie.html?m=Stand by Me") Stand by Me
-      li: a(href="movie.html?m=The 400 Blows") The 400 Blows
-      li: a(href="movie.html?m=Touch of Evil") Touch of Evil
-      li: a(href="movie.html?m=Network") Network
-      li: a(href="movie.html?m=There Will Be Blood") There Will Be Blood
-      li: a(href="movie.html?m=Butch Cassidy and the Sundance Kid") Butch Cassidy and the Sundance Kid
-      li: a(href="movie.html?m=The Wages of Fear") The Wages of Fear
-      li: a(href="movie.html?m=Platoon") Platoon
-      li: a(href="movie.html?m=Life of Brian") Life of Brian
-      li: a(href="movie.html?m=Hotel Rwanda") Hotel Rwanda
-      li: a(href="movie.html?m=Kill Bill: Vol. 1") Kill Bill: Vol. 1
-      li: a(href="movie.html?m=Nawals hemlighet") Nawals hemlighet
-      li: a(href="movie.html?m=No Country for Old Men") No Country for Old Men
-      li: a(href="movie.html?m=The Thing") The Thing
-      li: a(href="movie.html?m=Mary & Max") Mary & Max
-      li: a(href="movie.html?m=The Maltese Falcon") The Maltese Falcon
-      li: a(href="movie.html?m=Finding Nemo") Finding Nemo
-      li: a(href="movie.html?m=Rush") Rush
-      li: a(href="movie.html?m=The Sixth Sense") The Sixth Sense
-      li: a(href="movie.html?m=Gone Girl") Gone Girl
-      li: a(href="movie.html?m=Dial M for Murder") Dial M for Murder
-      li: a(href="movie.html?m=Into the Wild") Into the Wild
-      li: a(href="movie.html?m=It Happened One Night") It Happened One Night
-      li: a(href="movie.html?m=Trainspotting") Trainspotting
-      li: a(href="movie.html?m=Fargo") Fargo
-      li: a(href="movie.html?m=Gone with the Wind") Gone with the Wind
-      li: a(href="movie.html?m=How to Train Your Dragon") How to Train Your Dragon
-      li: a(href="movie.html?m=The Deer Hunter") The Deer Hunter
-      li: a(href="movie.html?m=Cool Hand Luke") Cool Hand Luke
-      li: a(href="movie.html?m=A Beautiful Mind") A Beautiful Mind
-      li: a(href="movie.html?m=Judgment at Nuremberg") Judgment at Nuremberg
-      li: a(href="movie.html?m=Rebecca") Rebecca
-      li: a(href="movie.html?m=The Big Lebowski") The Big Lebowski
-      li: a(href="movie.html?m=V for Vendetta") V for Vendetta
-      li: a(href="movie.html?m=Gran Torino") Gran Torino
-      li: a(href="movie.html?m=Warrior") Warrior
-      li: a(href="movie.html?m=Howl's Moving Castle") Howl's Moving Castle
-      li: a(href="movie.html?m=The Wolf of Wall Street") The Wolf of Wall Street
-      li: a(href="movie.html?m=Casino") Casino
-      li: a(href="movie.html?m=The Elephant Man") The Elephant Man
-      li: a(href="movie.html?m=Lock, Stock and Two Smoking Barrels") Lock, Stock and Two Smoking Barrels
-      li: a(href="movie.html?m=The General") The General
-      li: a(href="movie.html?m=The Secret in Their Eyes") The Secret in Their Eyes
-      li: a(href="movie.html?m=Wild Strawberries") Wild Strawberries
-      li: a(href="movie.html?m=Blade Runner") Blade Runner
-      li: a(href="movie.html?m=The Seventh Seal") The Seventh Seal
-      li: a(href="movie.html?m=Att leva") Att leva
-      li: a(href="movie.html?m=The Gold Rush") The Gold Rush
-      li: a(href="movie.html?m=Ran") Ran
-      li: a(href="movie.html?m=My Neighbor Totoro") My Neighbor Totoro
-      li: a(href="movie.html?m=The Bridge on the River Kwai") The Bridge on the River Kwai
-      li: a(href="movie.html?m=Mr. Smith Goes to Washington") Mr. Smith Goes to Washington
-      li: a(href="movie.html?m=Pan's Labyrinth") Pan's Labyrinth
-      li: a(href="movie.html?m=On the Waterfront") On the Waterfront
-      li: a(href="movie.html?m=Heat") Heat
-      li: a(href="movie.html?m=Good Will Hunting") Good Will Hunting
-      li: a(href="movie.html?m=Die Hard") Die Hard
-      li: a(href="movie.html?m=The Great Escape") The Great Escape
-      li: a(href="movie.html?m=Chinatown") Chinatown
-      li: a(href="movie.html?m=The Hunt") The Hunt
-      li: a(href="movie.html?m=Downfall") Downfall
-      li: a(href="movie.html?m=Raging Bull") Raging Bull
-      li: a(href="movie.html?m=3 Idiots") 3 Idiots
-      li: a(href="movie.html?m=Up") Up
-      li: a(href="movie.html?m=Unforgiven") Unforgiven
-      li: a(href="movie.html?m=Some Like It Hot") Some Like It Hot
-      li: a(href="movie.html?m=Mad Max: Fury Road") Mad Max: Fury Road
-      li: a(href="movie.html?m=Scarface") Scarface
-      li: a(href="movie.html?m=Batman Begins") Batman Begins
-      li: a(href="movie.html?m=The Third Man") The Third Man
-      li: a(href="movie.html?m=Yojimbo") Yojimbo
-      li: a(href="movie.html?m=Metropolis") Metropolis
-      li: a(href="movie.html?m=Indiana Jones and the Last Crusade") Indiana Jones and the Last Crusade
-      li: a(href="movie.html?m=Nader och Simin - En separation") Nader och Simin - En separation
-      li: a(href="movie.html?m=The Treasure of the Sierra Madre") The Treasure of the Sierra Madre
-      li: a(href="movie.html?m=Inglourious Basterds") Inglourious Basterds
-      li: a(href="movie.html?m=The Apartment") The Apartment
-      li: a(href="movie.html?m=All About Eve") All About Eve
-      li: a(href="movie.html?m=Toy Story") Toy Story
-      li: a(href="movie.html?m=L.A. Confidential") L.A. Confidential
-      li: a(href="movie.html?m=Rashomon") Rashomon
-      li: a(href="movie.html?m=For a Few Dollars More") For a Few Dollars More
-      li: a(href="movie.html?m=The Kid") The Kid
-      li: a(href="movie.html?m=2001: A Space Odyssey") 2001: A Space Odyssey
-      li: a(href="movie.html?m=Snatch.") Snatch.
-      li: a(href="movie.html?m=Monty Python and the Holy Grail") Monty Python and the Holy Grail
-      li: a(href="movie.html?m=Singin' in the Rain") Singin' in the Rain
-      li: a(href="movie.html?m=Bicycle Thieves") Bicycle Thieves
-      li: a(href="movie.html?m=Amadeus") Amadeus
-      li: a(href="movie.html?m=The Sting") The Sting
-      li: a(href="movie.html?m=Full Metal Jacket") Full Metal Jacket
-      li: a(href="movie.html?m=Eternal Sunshine of the Spotless Mind") Eternal Sunshine of the Spotless Mind
-      li: a(href="movie.html?m=Lawrence of Arabia") Lawrence of Arabia
-      li: a(href="movie.html?m=To Kill a Mockingbird") To Kill a Mockingbird
-      li: a(href="movie.html?m=Requiem for a Dream") Requiem for a Dream
-      li: a(href="movie.html?m=Taxi Driver") Taxi Driver
-      li: a(href="movie.html?m=Double Indemnity") Double Indemnity
-      li: a(href="movie.html?m=A Clockwork Orange") A Clockwork Orange
-      li: a(href="movie.html?m=Braveheart") Braveheart
-      li: a(href="movie.html?m=Toy Story 3") Toy Story 3
-      li: a(href="movie.html?m=Reservoir Dogs") Reservoir Dogs
-      li: a(href="movie.html?m=Witness for the Prosecution") Witness for the Prosecution
-      li: a(href="movie.html?m=Amélie") Amélie
-      li: a(href="movie.html?m=Once Upon a Time in America") Once Upon a Time in America
-      li: a(href="movie.html?m=Star Wars: Episode VI - Return of the Jedi") Star Wars: Episode VI - Return of the Jedi
-      li: a(href="movie.html?m=M") M
-      li: a(href="movie.html?m=Das Boot") Das Boot
-      li: a(href="movie.html?m=Princess Mononoke") Princess Mononoke
-      li: a(href="movie.html?m=Old Boy - hämnden") Old Boy - hämnden
-      li: a(href="movie.html?m=Vertigo") Vertigo
-      li: a(href="movie.html?m=North by Northwest") North by Northwest
-      li: a(href="movie.html?m=Citizen Kane") Citizen Kane
-      li: a(href="movie.html?m=Aliens") Aliens
-      li: a(href="movie.html?m=Grave of the Fireflies") Grave of the Fireflies
-      li: a(href="movie.html?m=American Beauty") American Beauty
-      li: a(href="movie.html?m=WALL·E") WALL·E
-      li: a(href="movie.html?m=The Dark Knight Rises") The Dark Knight Rises
-      li: a(href="movie.html?m=Django Unchained") Django Unchained
-      li: a(href="movie.html?m=Paths of Glory") Paths of Glory
-      li: a(href="movie.html?m=The Shining") The Shining
-      li: a(href="movie.html?m=Cinema Paradiso") Cinema Paradiso
-      li: a(href="movie.html?m=The Great Dictator") The Great Dictator
-      li: a(href="movie.html?m=The Lives of Others") The Lives of Others
-      li: a(href="movie.html?m=Inside Out") Inside Out
-      li: a(href="movie.html?m=The Lion King") The Lion King
-      li: a(href="movie.html?m=Alien") Alien
-      li: a(href="movie.html?m=The Prestige") The Prestige
-      li: a(href="movie.html?m=Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb") Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
-      li: a(href="movie.html?m=Sunset Blvd.") Sunset Blvd.
-      li: a(href="movie.html?m=Back to the Future") Back to the Future
-      li: a(href="movie.html?m=Apocalypse Now") Apocalypse Now
-      li: a(href="movie.html?m=Gladiator") Gladiator
-      li: a(href="movie.html?m=The Departed") The Departed
-      li: a(href="movie.html?m=Memento") Memento
-      li: a(href="movie.html?m=The Pianist") The Pianist
-      li: a(href="movie.html?m=The Green Mile") The Green Mile
-      li: a(href="movie.html?m=Terminator 2: Judgment Day") Terminator 2: Judgment Day
-      li: a(href="movie.html?m=Whiplash") Whiplash
-      li: a(href="movie.html?m=Modern Times") Modern Times
-      li: a(href="movie.html?m=The Intouchables") The Intouchables
-      li: a(href="movie.html?m=Rear Window") Rear Window
-      li: a(href="movie.html?m=Psycho") Psycho
-      li: a(href="movie.html?m=City Lights") City Lights
-      li: a(href="movie.html?m=Raiders of the Lost Ark") Raiders of the Lost Ark
-      li: a(href="movie.html?m=Casablanca") Casablanca
-      li: a(href="movie.html?m=Spirited Away") Spirited Away
-      li: a(href="movie.html?m=American History X") American History X
-      li: a(href="movie.html?m=Saving Private Ryan") Saving Private Ryan
-      li: a(href="movie.html?m=Interstellar") Interstellar
-      li: a(href="movie.html?m=Once Upon a Time in the West") Once Upon a Time in the West
-      li: a(href="movie.html?m=Léon: The Professional") Léon: The Professional
-      li: a(href="movie.html?m=Life Is Beautiful") Life Is Beautiful
-      li: a(href="movie.html?m=It's a Wonderful Life") It's a Wonderful Life
-      li: a(href="movie.html?m=The Usual Suspects") The Usual Suspects
-      li: a(href="movie.html?m=The Silence of the Lambs") The Silence of the Lambs
-      li: a(href="movie.html?m=Se7en") Se7en
-      li: a(href="movie.html?m=City of God") City of God
-      li: a(href="movie.html?m=Seven Samurai") Seven Samurai
-      li: a(href="movie.html?m=Star Wars: Episode IV - A New Hope") Star Wars: Episode IV - A New Hope
-      li: a(href="movie.html?m=The Matrix") The Matrix
-      li: a(href="movie.html?m=Goodfellas") Goodfellas
-      li: a(href="movie.html?m=The Lord of the Rings: The Two Towers") The Lord of the Rings: The Two Towers
-      li: a(href="movie.html?m=One Flew Over the Cuckoo's Nest") One Flew Over the Cuckoo's Nest
-      li: a(href="movie.html?m=Inception") Inception
-      li: a(href="movie.html?m=Forrest Gump") Forrest Gump
-      li: a(href="movie.html?m=Star Wars: Episode V - The Empire Strikes Back") Star Wars: Episode V - The Empire Strikes Back
-      li: a(href="movie.html?m=The Lord of the Rings: The Fellowship of the Ring") The Lord of the Rings: The Fellowship of the Ring
-      li: a(href="movie.html?m=Fight Club") Fight Club
-      li: a(href="movie.html?m=The Lord of the Rings: The Return of the King") The Lord of the Rings: The Return of the King
-      li: a(href="movie.html?m=The Good, the Bad and the Ugly") The Good, the Bad and the Ugly
-      li: a(href="movie.html?m=Pulp Fiction") Pulp Fiction
-      li: a(href="movie.html?m=Schindler's List") Schindler's List
-      li: a(href="movie.html?m=12 Angry Men") 12 Angry Men
-      li: a(href="movie.html?m=The Dark Knight") The Dark Knight
-      li: a(href="movie.html?m=The Godfather: Part II") The Godfather: Part II
-      li: a(href="movie.html?m=The Godfather") The Godfather
-      li: a(href="movie.html?m=The Shawshank Redemption") The Shawshank Redemption
-    script(src='/js/jarvis2000.js')
-    script(src='/js/test-script.js')
+extends _layout
+
+block body
+  h1 Search
+  form(action='/', method='get')
+    input(type='search', name='q')
+    button(type='submit') Search
+  ol.search-results(style='display:none')
+    li: a(href="movie.html?m=Elite Squad: The Enemy Within") Elite Squad: The Enemy Within
+    li: a(href="movie.html?m=What Ever Happened to Baby Jane?") What Ever Happened to Baby Jane?
+    li: a(href="movie.html?m=In the Mood for Love") In the Mood for Love
+    li: a(href="movie.html?m=The Big Sleep") The Big Sleep
+    li: a(href="movie.html?m=The Graduate") The Graduate
+    li: a(href="movie.html?m=The Hustler") The Hustler
+    li: a(href="movie.html?m=La Dolce Vita") La Dolce Vita
+    li: a(href="movie.html?m=Lagaan") Lagaan
+    li: a(href="movie.html?m=Anatomy of a Murder") Anatomy of a Murder
+    li: a(href="movie.html?m=Before Sunset") Before Sunset
+    li: a(href="movie.html?m=X-Men: Days of Future Past") X-Men: Days of Future Past
+    li: a(href="movie.html?m=Underground") Underground
+    li: a(href="movie.html?m=Papillon") Papillon
+    li: a(href="movie.html?m=Beauty and the Beast") Beauty and the Beast
+    li: a(href="movie.html?m=La Strada") La Strada
+    li: a(href="movie.html?m=Spring, Summer, Fall, Winter... and Spring") Spring, Summer, Fall, Winter... and Spring
+    li: a(href="movie.html?m=The Night of the Hunter") The Night of the Hunter
+    li: a(href="movie.html?m=Prisoners") Prisoners
+    li: a(href="movie.html?m=Roman Holiday") Roman Holiday
+    li: a(href="movie.html?m=The Help") The Help
+    li: a(href="movie.html?m=Who's Afraid of Virginia Woolf?") Who's Afraid of Virginia Woolf?
+    li: a(href="movie.html?m=Castle in the Sky") Castle in the Sky
+    li: a(href="movie.html?m=Pirates of the Caribbean: The Curse of the Black Pearl") Pirates of the Caribbean: The Curse of the Black Pearl
+    li: a(href="movie.html?m=Notorious") Notorious
+    li: a(href="movie.html?m=A Fistful of Dollars") A Fistful of Dollars
+    li: a(href="movie.html?m=La Haine") La Haine
+    li: a(href="movie.html?m=High Noon") High Noon
+    li: a(href="movie.html?m=The Imitation Game") The Imitation Game
+    li: a(href="movie.html?m=The King's Speech") The King's Speech
+    li: a(href="movie.html?m=Ip Man") Ip Man
+    li: a(href="movie.html?m=Dog Day Afternoon") Dog Day Afternoon
+    li: a(href="movie.html?m=Barry Lyndon") Barry Lyndon
+    li: a(href="movie.html?m=Rocky") Rocky
+    li: a(href="movie.html?m=The Truman Show") The Truman Show
+    li: a(href="movie.html?m=Fanny and Alexander") Fanny and Alexander
+    li: a(href="movie.html?m=Harry Potter and the Deathly Hallows: Part 2") Harry Potter and the Deathly Hallows: Part 2
+    li: a(href="movie.html?m=Throne of Blood") Throne of Blood
+    li: a(href="movie.html?m=Monsters, Inc.") Monsters, Inc.
+    li: a(href="movie.html?m=Memories of Murder") Memories of Murder
+    li: a(href="movie.html?m=Groundhog Day") Groundhog Day
+    li: a(href="movie.html?m=Guardians of the Galaxy") Guardians of the Galaxy
+    li: a(href="movie.html?m=Jaws") Jaws
+    li: a(href="movie.html?m=The Battle of Algiers") The Battle of Algiers
+    li: a(href="movie.html?m=The Terminator") The Terminator
+    li: a(href="movie.html?m=Infernal Affairs") Infernal Affairs
+    li: a(href="movie.html?m=Twelve Monkeys") Twelve Monkeys
+    li: a(href="movie.html?m=Before Sunrise") Before Sunrise
+    li: a(href="movie.html?m=Jurassic Park") Jurassic Park
+    li: a(href="movie.html?m=The Avengers") The Avengers
+    li: a(href="movie.html?m=Wild Tales") Wild Tales
+    li: a(href="movie.html?m=Strangers on a Train") Strangers on a Train
+    li: a(href="movie.html?m=8½") 8½
+    li: a(href="movie.html?m=Donnie Darko") Donnie Darko
+    li: a(href="movie.html?m=The Bourne Ultimatum") The Bourne Ultimatum
+    li: a(href="movie.html?m=Gandhi") Gandhi
+    li: a(href="movie.html?m=Stalker") Stalker
+    li: a(href="movie.html?m=The Best Years of Our Lives") The Best Years of Our Lives
+    li: a(href="movie.html?m=The Wizard of Oz") The Wizard of Oz
+    li: a(href="movie.html?m=Sin City") Sin City
+    li: a(href="movie.html?m=Shutter Island") Shutter Island
+    li: a(href="movie.html?m=Diabolique") Diabolique
+    li: a(href="movie.html?m=Nausicaä of the Valley of the Wind") Nausicaä of the Valley of the Wind
+    li: a(href="movie.html?m=Hachi: A Dog's Tale") Hachi: A Dog's Tale
+    li: a(href="movie.html?m=The Grapes of Wrath") The Grapes of Wrath
+    li: a(href="movie.html?m=Ben-Hur") Ben-Hur
+    li: a(href="movie.html?m=Million Dollar Baby") Million Dollar Baby
+    li: a(href="movie.html?m=I faderns namn") I faderns namn
+    li: a(href="movie.html?m=Amores Perros") Amores Perros
+    li: a(href="movie.html?m=The Grand Budapest Hotel") The Grand Budapest Hotel
+    li: a(href="movie.html?m=Persona") Persona
+    li: a(href="movie.html?m=Annie Hall") Annie Hall
+    li: a(href="movie.html?m=The Princess Bride") The Princess Bride
+    li: a(href="movie.html?m=12 Years a Slave") 12 Years a Slave
+    li: a(href="movie.html?m=Stand by Me") Stand by Me
+    li: a(href="movie.html?m=The 400 Blows") The 400 Blows
+    li: a(href="movie.html?m=Touch of Evil") Touch of Evil
+    li: a(href="movie.html?m=Network") Network
+    li: a(href="movie.html?m=There Will Be Blood") There Will Be Blood
+    li: a(href="movie.html?m=Butch Cassidy and the Sundance Kid") Butch Cassidy and the Sundance Kid
+    li: a(href="movie.html?m=The Wages of Fear") The Wages of Fear
+    li: a(href="movie.html?m=Platoon") Platoon
+    li: a(href="movie.html?m=Life of Brian") Life of Brian
+    li: a(href="movie.html?m=Hotel Rwanda") Hotel Rwanda
+    li: a(href="movie.html?m=Kill Bill: Vol. 1") Kill Bill: Vol. 1
+    li: a(href="movie.html?m=Nawals hemlighet") Nawals hemlighet
+    li: a(href="movie.html?m=No Country for Old Men") No Country for Old Men
+    li: a(href="movie.html?m=The Thing") The Thing
+    li: a(href="movie.html?m=Mary & Max") Mary & Max
+    li: a(href="movie.html?m=The Maltese Falcon") The Maltese Falcon
+    li: a(href="movie.html?m=Finding Nemo") Finding Nemo
+    li: a(href="movie.html?m=Rush") Rush
+    li: a(href="movie.html?m=The Sixth Sense") The Sixth Sense
+    li: a(href="movie.html?m=Gone Girl") Gone Girl
+    li: a(href="movie.html?m=Dial M for Murder") Dial M for Murder
+    li: a(href="movie.html?m=Into the Wild") Into the Wild
+    li: a(href="movie.html?m=It Happened One Night") It Happened One Night
+    li: a(href="movie.html?m=Trainspotting") Trainspotting
+    li: a(href="movie.html?m=Fargo") Fargo
+    li: a(href="movie.html?m=Gone with the Wind") Gone with the Wind
+    li: a(href="movie.html?m=How to Train Your Dragon") How to Train Your Dragon
+    li: a(href="movie.html?m=The Deer Hunter") The Deer Hunter
+    li: a(href="movie.html?m=Cool Hand Luke") Cool Hand Luke
+    li: a(href="movie.html?m=A Beautiful Mind") A Beautiful Mind
+    li: a(href="movie.html?m=Judgment at Nuremberg") Judgment at Nuremberg
+    li: a(href="movie.html?m=Rebecca") Rebecca
+    li: a(href="movie.html?m=The Big Lebowski") The Big Lebowski
+    li: a(href="movie.html?m=V for Vendetta") V for Vendetta
+    li: a(href="movie.html?m=Gran Torino") Gran Torino
+    li: a(href="movie.html?m=Warrior") Warrior
+    li: a(href="movie.html?m=Howl's Moving Castle") Howl's Moving Castle
+    li: a(href="movie.html?m=The Wolf of Wall Street") The Wolf of Wall Street
+    li: a(href="movie.html?m=Casino") Casino
+    li: a(href="movie.html?m=The Elephant Man") The Elephant Man
+    li: a(href="movie.html?m=Lock, Stock and Two Smoking Barrels") Lock, Stock and Two Smoking Barrels
+    li: a(href="movie.html?m=The General") The General
+    li: a(href="movie.html?m=The Secret in Their Eyes") The Secret in Their Eyes
+    li: a(href="movie.html?m=Wild Strawberries") Wild Strawberries
+    li: a(href="movie.html?m=Blade Runner") Blade Runner
+    li: a(href="movie.html?m=The Seventh Seal") The Seventh Seal
+    li: a(href="movie.html?m=Att leva") Att leva
+    li: a(href="movie.html?m=The Gold Rush") The Gold Rush
+    li: a(href="movie.html?m=Ran") Ran
+    li: a(href="movie.html?m=My Neighbor Totoro") My Neighbor Totoro
+    li: a(href="movie.html?m=The Bridge on the River Kwai") The Bridge on the River Kwai
+    li: a(href="movie.html?m=Mr. Smith Goes to Washington") Mr. Smith Goes to Washington
+    li: a(href="movie.html?m=Pan's Labyrinth") Pan's Labyrinth
+    li: a(href="movie.html?m=On the Waterfront") On the Waterfront
+    li: a(href="movie.html?m=Heat") Heat
+    li: a(href="movie.html?m=Good Will Hunting") Good Will Hunting
+    li: a(href="movie.html?m=Die Hard") Die Hard
+    li: a(href="movie.html?m=The Great Escape") The Great Escape
+    li: a(href="movie.html?m=Chinatown") Chinatown
+    li: a(href="movie.html?m=The Hunt") The Hunt
+    li: a(href="movie.html?m=Downfall") Downfall
+    li: a(href="movie.html?m=Raging Bull") Raging Bull
+    li: a(href="movie.html?m=3 Idiots") 3 Idiots
+    li: a(href="movie.html?m=Up") Up
+    li: a(href="movie.html?m=Unforgiven") Unforgiven
+    li: a(href="movie.html?m=Some Like It Hot") Some Like It Hot
+    li: a(href="movie.html?m=Mad Max: Fury Road") Mad Max: Fury Road
+    li: a(href="movie.html?m=Scarface") Scarface
+    li: a(href="movie.html?m=Batman Begins") Batman Begins
+    li: a(href="movie.html?m=The Third Man") The Third Man
+    li: a(href="movie.html?m=Yojimbo") Yojimbo
+    li: a(href="movie.html?m=Metropolis") Metropolis
+    li: a(href="movie.html?m=Indiana Jones and the Last Crusade") Indiana Jones and the Last Crusade
+    li: a(href="movie.html?m=Nader och Simin - En separation") Nader och Simin - En separation
+    li: a(href="movie.html?m=The Treasure of the Sierra Madre") The Treasure of the Sierra Madre
+    li: a(href="movie.html?m=Inglourious Basterds") Inglourious Basterds
+    li: a(href="movie.html?m=The Apartment") The Apartment
+    li: a(href="movie.html?m=All About Eve") All About Eve
+    li: a(href="movie.html?m=Toy Story") Toy Story
+    li: a(href="movie.html?m=L.A. Confidential") L.A. Confidential
+    li: a(href="movie.html?m=Rashomon") Rashomon
+    li: a(href="movie.html?m=For a Few Dollars More") For a Few Dollars More
+    li: a(href="movie.html?m=The Kid") The Kid
+    li: a(href="movie.html?m=2001: A Space Odyssey") 2001: A Space Odyssey
+    li: a(href="movie.html?m=Snatch.") Snatch.
+    li: a(href="movie.html?m=Monty Python and the Holy Grail") Monty Python and the Holy Grail
+    li: a(href="movie.html?m=Singin' in the Rain") Singin' in the Rain
+    li: a(href="movie.html?m=Bicycle Thieves") Bicycle Thieves
+    li: a(href="movie.html?m=Amadeus") Amadeus
+    li: a(href="movie.html?m=The Sting") The Sting
+    li: a(href="movie.html?m=Full Metal Jacket") Full Metal Jacket
+    li: a(href="movie.html?m=Eternal Sunshine of the Spotless Mind") Eternal Sunshine of the Spotless Mind
+    li: a(href="movie.html?m=Lawrence of Arabia") Lawrence of Arabia
+    li: a(href="movie.html?m=To Kill a Mockingbird") To Kill a Mockingbird
+    li: a(href="movie.html?m=Requiem for a Dream") Requiem for a Dream
+    li: a(href="movie.html?m=Taxi Driver") Taxi Driver
+    li: a(href="movie.html?m=Double Indemnity") Double Indemnity
+    li: a(href="movie.html?m=A Clockwork Orange") A Clockwork Orange
+    li: a(href="movie.html?m=Braveheart") Braveheart
+    li: a(href="movie.html?m=Toy Story 3") Toy Story 3
+    li: a(href="movie.html?m=Reservoir Dogs") Reservoir Dogs
+    li: a(href="movie.html?m=Witness for the Prosecution") Witness for the Prosecution
+    li: a(href="movie.html?m=Amélie") Amélie
+    li: a(href="movie.html?m=Once Upon a Time in America") Once Upon a Time in America
+    li: a(href="movie.html?m=Star Wars: Episode VI - Return of the Jedi") Star Wars: Episode VI - Return of the Jedi
+    li: a(href="movie.html?m=M") M
+    li: a(href="movie.html?m=Das Boot") Das Boot
+    li: a(href="movie.html?m=Princess Mononoke") Princess Mononoke
+    li: a(href="movie.html?m=Old Boy - hämnden") Old Boy - hämnden
+    li: a(href="movie.html?m=Vertigo") Vertigo
+    li: a(href="movie.html?m=North by Northwest") North by Northwest
+    li: a(href="movie.html?m=Citizen Kane") Citizen Kane
+    li: a(href="movie.html?m=Aliens") Aliens
+    li: a(href="movie.html?m=Grave of the Fireflies") Grave of the Fireflies
+    li: a(href="movie.html?m=American Beauty") American Beauty
+    li: a(href="movie.html?m=WALL·E") WALL·E
+    li: a(href="movie.html?m=The Dark Knight Rises") The Dark Knight Rises
+    li: a(href="movie.html?m=Django Unchained") Django Unchained
+    li: a(href="movie.html?m=Paths of Glory") Paths of Glory
+    li: a(href="movie.html?m=The Shining") The Shining
+    li: a(href="movie.html?m=Cinema Paradiso") Cinema Paradiso
+    li: a(href="movie.html?m=The Great Dictator") The Great Dictator
+    li: a(href="movie.html?m=The Lives of Others") The Lives of Others
+    li: a(href="movie.html?m=Inside Out") Inside Out
+    li: a(href="movie.html?m=The Lion King") The Lion King
+    li: a(href="movie.html?m=Alien") Alien
+    li: a(href="movie.html?m=The Prestige") The Prestige
+    li: a(href="movie.html?m=Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb") Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+    li: a(href="movie.html?m=Sunset Blvd.") Sunset Blvd.
+    li: a(href="movie.html?m=Back to the Future") Back to the Future
+    li: a(href="movie.html?m=Apocalypse Now") Apocalypse Now
+    li: a(href="movie.html?m=Gladiator") Gladiator
+    li: a(href="movie.html?m=The Departed") The Departed
+    li: a(href="movie.html?m=Memento") Memento
+    li: a(href="movie.html?m=The Pianist") The Pianist
+    li: a(href="movie.html?m=The Green Mile") The Green Mile
+    li: a(href="movie.html?m=Terminator 2: Judgment Day") Terminator 2: Judgment Day
+    li: a(href="movie.html?m=Whiplash") Whiplash
+    li: a(href="movie.html?m=Modern Times") Modern Times
+    li: a(href="movie.html?m=The Intouchables") The Intouchables
+    li: a(href="movie.html?m=Rear Window") Rear Window
+    li: a(href="movie.html?m=Psycho") Psycho
+    li: a(href="movie.html?m=City Lights") City Lights
+    li: a(href="movie.html?m=Raiders of the Lost Ark") Raiders of the Lost Ark
+    li: a(href="movie.html?m=Casablanca") Casablanca
+    li: a(href="movie.html?m=Spirited Away") Spirited Away
+    li: a(href="movie.html?m=American History X") American History X
+    li: a(href="movie.html?m=Saving Private Ryan") Saving Private Ryan
+    li: a(href="movie.html?m=Interstellar") Interstellar
+    li: a(href="movie.html?m=Once Upon a Time in the West") Once Upon a Time in the West
+    li: a(href="movie.html?m=Léon: The Professional") Léon: The Professional
+    li: a(href="movie.html?m=Life Is Beautiful") Life Is Beautiful
+    li: a(href="movie.html?m=It's a Wonderful Life") It's a Wonderful Life
+    li: a(href="movie.html?m=The Usual Suspects") The Usual Suspects
+    li: a(href="movie.html?m=The Silence of the Lambs") The Silence of the Lambs
+    li: a(href="movie.html?m=Se7en") Se7en
+    li: a(href="movie.html?m=City of God") City of God
+    li: a(href="movie.html?m=Seven Samurai") Seven Samurai
+    li: a(href="movie.html?m=Star Wars: Episode IV - A New Hope") Star Wars: Episode IV - A New Hope
+    li: a(href="movie.html?m=The Matrix") The Matrix
+    li: a(href="movie.html?m=Goodfellas") Goodfellas
+    li: a(href="movie.html?m=The Lord of the Rings: The Two Towers") The Lord of the Rings: The Two Towers
+    li: a(href="movie.html?m=One Flew Over the Cuckoo's Nest") One Flew Over the Cuckoo's Nest
+    li: a(href="movie.html?m=Inception") Inception
+    li: a(href="movie.html?m=Forrest Gump") Forrest Gump
+    li: a(href="movie.html?m=Star Wars: Episode V - The Empire Strikes Back") Star Wars: Episode V - The Empire Strikes Back
+    li: a(href="movie.html?m=The Lord of the Rings: The Fellowship of the Ring") The Lord of the Rings: The Fellowship of the Ring
+    li: a(href="movie.html?m=Fight Club") Fight Club
+    li: a(href="movie.html?m=The Lord of the Rings: The Return of the King") The Lord of the Rings: The Return of the King
+    li: a(href="movie.html?m=The Good, the Bad and the Ugly") The Good, the Bad and the Ugly
+    li: a(href="movie.html?m=Pulp Fiction") Pulp Fiction
+    li: a(href="movie.html?m=Schindler's List") Schindler's List
+    li: a(href="movie.html?m=12 Angry Men") 12 Angry Men
+    li: a(href="movie.html?m=The Dark Knight") The Dark Knight
+    li: a(href="movie.html?m=The Godfather: Part II") The Godfather: Part II
+    li: a(href="movie.html?m=The Godfather") The Godfather
+    li: a(href="movie.html?m=The Shawshank Redemption") The Shawshank Redemption
