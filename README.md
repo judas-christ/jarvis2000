@@ -1,3 +1,3 @@
-# Lingon Minimal Template
+# Jarvis 2000
 
-A minimal template for a [lingon](https://github.com/jpettersson/lingon) project
+> A voice assistant for the web
